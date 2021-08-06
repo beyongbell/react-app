@@ -80,5 +80,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: ReactService
-        cluster: default
+        cluster: ReactCluster
         wait-for-service-stability: true
