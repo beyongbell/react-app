@@ -29,7 +29,7 @@
         "memoryReservation": null,
         "volumesFrom": [],
         "stopTimeout": null,
-        "image": "453599895921.dkr.ecr.ap-southeast-1.amazonaws.com/react-app",
+        "image": "453599895921.dkr.ecr.ap-southeast-1.amazonaws.com/reactapp1",
         "startTimeout": null,
         "firelensConfiguration": null,
         "dependsOn": null,
@@ -46,7 +46,7 @@
         "dockerLabels": null,
         "systemControls": null,
         "privileged": null,
-        "name": "ReactAppContainer"
+        "name": "ReactAppContainer1"
       }
     ],
     "placementConstraints": [],
@@ -56,8 +56,8 @@
       "EXTERNAL",
       "EC2"
     ],
-    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-1:453599895921:task-definition/DeploymentContainer:1",
-    "family": "DeploymentContainer",
+    "taskDefinitionArn": "arn:aws:ecs:ap-southeast-1:453599895921:task-definition/DeployReact:1",
+    "family": "DeployReact",
     "requiresAttributes": [
       {
         "targetId": null,
