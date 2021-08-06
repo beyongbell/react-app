@@ -18,7 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <h2>Welcome to Amazon ECS</h2>
+      <h2>Welcome to Eakwarapat</h2>
     </div>
   );
 }
