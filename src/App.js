@@ -18,6 +18,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <h2>Welcome to Amazon ECS</h2>
     </div>
   );
 }
