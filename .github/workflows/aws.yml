@@ -57,7 +57,7 @@ jobs:
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        ECR_REPOSITORY: react-app1
+        ECR_REPOSITORY: react-app
         IMAGE_TAG: ${{ github.sha }}
       run: |
         # Build a docker container and
@@ -72,7 +72,7 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: task-definition.json
-        container-name: ReactAppContainer1
+        container-name: DeploymentContainer
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
@@ -80,5 +80,5 @@ jobs:
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: ReactService
-        cluster: ReactAppCluster
+        cluster: default
         wait-for-service-stability: true
